@@ -14,6 +14,15 @@ public class TestBaidu {
 		System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe"); // chromedriver path
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.baidu.com");
+		Thread.sleep(1500);
+		driver.quit();
+  }
+	
+  @Test
+  public void BaiduSearch() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe"); // chromedriver path
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://www.baidu.com");
 		driver.findElement(By.id("kw")).sendKeys("SCARA"); // find the element 'kw', and enter 'hello'
 		driver.findElement(By.id("su")).click(); // click the 'search' button
 		try {

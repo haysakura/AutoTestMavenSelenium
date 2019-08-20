@@ -3,6 +3,7 @@
     <test name="baidutest">
         <classes>
             <class name="com.kuka.AutoTestMaven.TestBaidu" />
+            <class name="com.kuka.AutoTestMaven.TestCSPlus" />
         </classes>
     </test>
 </suite>
